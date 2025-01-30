@@ -18,76 +18,90 @@
             max-width: 700px;
             margin: 50px auto;
             line-height: 1.6;
+            color: #333;
         }
-        h1 {
-            text-align: center;
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background-color: #121212;
+            color: white;
+            border-radius: 10px;
+            width: fit-content;
         }
+
+        .profile img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
         p {
             font-size: 18px;
         }
+
         a {
             color: #0073e6;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         hr {
             margin-top: 30px;
         }
-        .profile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: #121212;
-    color: white;
-    border-radius: 10px;
-    width: fit-content;
-}
-
-.profile img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-info h2 {
-    margin: 0;
-    font-size: 22px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-    
     </style>
 </head>
 <body>
 
+    <!-- Profile Section -->
     <div class="profile">
         <img src="profile.jpg" alt="Aakash Athawasya">
         <div class="profile-info">
             <h2>Aakash Athawasya</h2>
             <div class="social-icons">
-                <a href="https://twitter.com/AakashAtha" target="_blank"><img src="twitter.svg" alt="Twitter"></a>
-                <a href="https://linkedin.com/in/YOURHANDLE" target="_blank"><img src="linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://instagram.com/YOURHANDLE" target="_blank"><img src="instagram.svg" alt="Instagram"></a>
-                <a href="mailto:aakash.athawasya96@gmail.com"><img src="email.svg" alt="Email"></a>
+                <a href="https://twitter.com/AakashAtha" target="_blank">
+                    <img src="twitter.svg" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/aakash-pyor/" target="_blank">
+                    <img src="linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/aakashgoesout/" target="_blank">
+                    <img src="instagram.svg" alt="Instagram">
+                </a>
+                <a href="mailto:aakash.athawasya96@gmail.com">
+                    <img src="email.svg" alt="Email">
+                </a>
             </div>
         </div>
     </div>
 
-    <h1><strong>Aakash Athawasya</strong></h1>
+    <!-- Main Content -->
     <p><em>ping me on <a href="https://twitter.com/AakashAtha" target="_blank">Twitter</a>, 
         <a href="https://github.com/aakashathawasya96" target="_blank">GitHub</a>, 
         or via <a href="mailto:aakash.athawasya96@gmail.com">email</a></em></p>
@@ -107,5 +121,4 @@
     <p><em>💡 This website was built from scratch and will evolve over time, like everything else I work on.</em></p>
 
 </body>
-
 </html>
