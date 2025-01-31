@@ -27,14 +27,21 @@
         }
         
         body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 50px auto;
+            line-height: 1.6;
+            padding: 0 20px;
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background-color 0.3s, color 0.3s;
-        }
+            }
         
-        hr {
+      hr {
+            margin: 40px 0;
+            border: none;
             border-top: 1px solid var(--hr-color);
-        }
+            }
         
         /* Toggle button styles */
         .theme-toggle {
@@ -64,17 +71,9 @@
         }
         
         [data-theme="light"] .social-icons img {
-            filter: invert(0);
+            filter: invert(0) brightness(0);
         }
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 50px auto;
-            line-height: 1.6;
-            background-color: #13192C;
-            color: white;
-            padding: 0 20px;
-        }
+
 
         .profile {
             display: flex;
@@ -144,12 +143,6 @@
             text-decoration: underline;
         }
 
-        hr {
-            margin: 40px 0;
-            border: none;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
         em {
             font-style: italic;
             opacity: 0.8;
@@ -157,6 +150,9 @@
     </style>
 </head>
 <body>
+        <button class="theme-toggle" aria-label="Toggle theme">
+            <img src="./assets/moon.svg" alt="Theme toggle" id="theme-icon">
+        </button>
     <!-- Profile Section -->
     <div class="profile">
         <img src="profile.JPG" alt="Aakash Athawasya">
