@@ -13,6 +13,59 @@
     <link rel="manifest" href="site.webmanifest">
 
     <style>
+                /* Theme-related styles */
+        :root {
+            --bg-color: #13192C;
+            --text-color: white;
+            --hr-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        [data-theme="light"] {
+            --bg-color: #ffffff;
+            --text-color: #13192C;
+            --hr-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        hr {
+            border-top: 1px solid var(--hr-color);
+        }
+        
+        /* Toggle button styles */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle img {
+            width: 24px;
+            height: 24px;
+            filter: invert(1);
+        }
+        
+        [data-theme="light"] .theme-toggle img {
+            filter: none;
+        }
+        
+        [data-theme="light"] .social-icons img {
+            filter: invert(0);
+        }
         body {
             font-family: Arial, sans-serif;
             max-width: 700px;
